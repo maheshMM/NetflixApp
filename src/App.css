@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+div.srcSection {
+margin-bottom: 10px;
+}
+.searchbtn, .goBack {
+  margin-left: 10px;
+}
+
+button.watchLater
+{
+  margin-left: 10px;
+  padding: 0px;
+}
+.locCntry, .locState, .loccity
+{
+ width: 120px;
+ margin-right: 100px;
+}
+
+button.watchNow
+{
+  padding: 0px;
+}
+/* div.card-body
+{
+  border: 1px solid black;
+  
+} */
+
+div.card-container{
+  margin-top: 10px;
+}
+
