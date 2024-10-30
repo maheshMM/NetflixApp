@@ -14,6 +14,8 @@ const LocationSelector = () => {
 
 
 
+  console.log(selectedCountry, "selectedCountry ********")
+
   const getData = async (endPoint) => {
     try {
       const response = await fetch(`${BASE_URL}/${endPoint}`, {
@@ -45,6 +47,9 @@ const LocationSelector = () => {
     lastCallTime = Date.now();
     return getData(endpoint);
   };
+
+
+
   
   const handleCountryChange = async (countryCode) => {
          setSelectedCountry(countryCode);
