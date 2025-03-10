@@ -8,7 +8,7 @@ const Cards = ({ data, watchnowHandle, addtoWatchListHandle}) => {
             <div className="card-body">
                 <h5 className="card-title">{data.Title}</h5>
                 <p className="card-text">{data.Title}</p>
-                <button className = "watchNow" onClick={()=>watchnowHandles(data.Title)} >Watch Now</button>
+                <button className = "watchNow" onClick={()=>watchnowHandle(data.Title)} >Watch Now</button>
                 <button className="watchLater" onClick = {()=>addtoWatchListHandle(data.Title)}>Add to WatchList</button>
                 
             </div>

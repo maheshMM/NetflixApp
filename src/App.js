@@ -4,6 +4,10 @@ import React, {useState} from 'react';
 import HomePage from './NetflixHomePage';
 import MoviesList from './MoviesList';
 import LocationSelector from './LocationSelector'
+import LocSelectorDropDown from'./dropDownBox'
+import UserDirectory from './UserDirectory'
+import QuizeQuestions  from './QuizeQuestions';
+import MangeUsers from './MangeUsers'
 function App() {
   
   const [count, setCount] = useState(0);  
@@ -32,14 +36,17 @@ function App() {
   return (
 
     <div className="App">
-    <h1> Netflix App</h1>
-    <LocationSelector></LocationSelector>
-    <HomePage setData={setData} watchLaterCount={count} searchValue = {search} setSearch = {setSearch} SearchHandle = {SearchHandle} allMovieData={allMovieData} tglSrcGoBack={tglSrcGoBack} setTglSrcGoBack={setTglSrcGoBack}></HomePage>
-    <MoviesList setCount={setCount} searchValue={search}  moviesData={moviesData} setData={setData}  setAllMovieData={setAllMovieData}></MoviesList>
+    <h1> Moives Now App</h1> 
+    {/* <LocSelectorDropDown></LocSelectorDropDown>  */}
+      <LocationSelector></LocationSelector>  
+    <UserDirectory></UserDirectory> 
+     <HomePage setData={setData} watchLaterCount={count} searchValue = {search} setSearch = {setSearch} SearchHandle = {SearchHandle} allMovieData={allMovieData} tglSrcGoBack={tglSrcGoBack} setTglSrcGoBack={setTglSrcGoBack}></HomePage> 
+     <MoviesList setCount={setCount} searchValue={search}  moviesData={moviesData} setData={setData}  setAllMovieData={setAllMovieData}></MoviesList> 
   
+      {/* <QuizeQuestions></QuizeQuestions>  */}
+      {/* <MangeUsers></MangeUsers>  */}
     </div>
 
   );
 }
-
 export default App;
